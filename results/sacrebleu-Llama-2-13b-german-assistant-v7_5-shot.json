@@ -1,0 +1,579 @@
+{
+    "model": "models/Llama-2-13b-german-assistant-v7",
+    "dataset": "wmt20_mlqe_task1_en-de",
+    "gen_config": {
+        "temperature": 0.7,
+        "top_p": 0.1,
+        "repetition_penalty": 1.18,
+        "top_k": 40,
+        "do_sample": true,
+        "num_return_sequences": 1,
+        "eos_token_id": 2,
+        "max_new_tokens": 100
+    },
+    "num_shots": 5,
+    "num_translations": 112,
+    "sacrebleu_score": 0.0,
+    "translations": [
+        {
+            "input": "The Frenchwoman's win irritated some of her male rivals.",
+            "reference": "Der Sieg der Franz\u00f6sin irritierte einige ihrer m\u00e4nnlichen Rivalen.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Good or bad, the theories of educators such as Rousseau's near contemporaries Pestalozzi, Mme.",
+            "reference": "Gut oder schlecht, die Theorien der P\u00e4dagogen wie Rousseaus nahe Zeitgenossen Pestalozzi, Mme.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Alfred Stieglitz enrolled in the Real Gymnasium in Karlsruhe.",
+            "reference": "Alfred Stieglitz hat sich am Real Gymnasium Karlsruhe eingeschrieben.",
+            "prediction": "assum'''to'''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Superman battles the Phantom Zone villains in Washington.",
+            "reference": "Superman k\u00e4mpft gegen die Schurken der Phantom Zone in Washington.",
+            "prediction": "Doc 'Doc'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "However, Berke remained neutral militarily, and after the defeat of Ariq B\u00f6ke, freely acceded to Kublai's enthronement.",
+            "reference": "Berke blieb jedoch milit\u00e4risch neutral und trat nach der Niederlage von Ariq B\u00f6ke Kublais Inthronisierung frei bei.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Meanwhile, Poivre had finally obtained seedlings of nutmeg and clove, and 10,000 nutmeg seeds.",
+            "reference": "Inzwischen hatte Poivre schlie\u00dflich S\u00e4mlinge von Muskatnuss und Nelke und 10.000 Muskatensamen erhalten.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "The Barnstormers currently play in the Indoor Football League.",
+            "reference": "Die Barnstormers spielen derzeit in der Indoor Football League.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Terminally, it bears four lobes, two inner glossae, and two outer paraglossae, which are collectively known as the ligula.",
+            "reference": "Schlie\u00dflich tr\u00e4gt er vier Lappen, zwei innere Glossae und zwei \u00e4u\u00dfere Gleitschirme, die kollektiv als Ligula bekannt sind.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "None of James's biographers accepted them as plausible.",
+            "reference": "Keiner von James 's Biographen akzeptierte sie als plausibel.",
+            "prediction": "none'''for'''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "The original soundtrack cracked the top 20 of the U.S.",
+            "reference": "Der originale Soundtrack knackte die Top 20 der USA",
+            "prediction": "''to'''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Through their property in east Orlando flowed the Econlockhatchee River, which travelers crossed by fording.",
+            "reference": "Durch ihr Eigentum im Osten Orlando floss die Econlockhatchee River, die Reisende durch Fording \u00fcberquert.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Surrey batted first and reached 174/2 at lunchtime.",
+            "reference": "Surrey schlug zuerst und erreichte 174 / 2 zur Mittagszeit.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Within the pods, the hippos tend to segregate by gender.",
+            "reference": "Innerhalb der H\u00fclsen neigen die Flusspferde dazu, sich nach Geschlecht zu trennen.",
+            "prediction": "within'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Next, at The Manchester Trophy in Manchester, UK he partnered Lovro Zovko to the final.",
+            "reference": "Als n\u00e4chstes, bei der Manchester Trophy in Manchester, Gro\u00dfbritannien er Partner Lovro Zovko bis zum Finale.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "On Day 35, HouseGuests competed in the \"A Lotta Pinata\" Power of Veto competition.",
+            "reference": "Am Tag 35, HouseGuest konkurrierte in der \"A Lotta Pinata\" Power of Veto Wettbewerb.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "The highway headed northeast through Keene, where it intersected Route 10 and Route 12.",
+            "reference": "Die Autobahn f\u00fchrte nord\u00f6stlich durch Keene, wo sie die Route 10 und die Route 12 durchkreuzte.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "With the fall of Terry Alderman's wicket, Australia ware all out for 528, a first innings lead of 242, with Steve Waugh once again not out on 152.",
+            "reference": "Mit dem Fall von Terry Alderman 's wicket, Australien ware all out for 528, eine erste Innings F\u00fchrung von 242, mit Steve Waugh wieder nicht heraus auf 152.",
+            "prediction": "ith'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "The Big Ten followed the NCAA actions, concurring with its findings by officially censuring Penn State and levying a separate fine of $13 million.",
+            "reference": "Die Big Ten folgten den NCAA-Aktionen, die mit ihren Feststellungen \u00fcbereinstimmten, indem sie Penn State offiziell kritisierten und eine separate Geldstrafe von 13 Millionen Dollar verh\u00e4ngten.",
+            "prediction": "''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Two other EF0 tornadoes touched down in Arkansas and Louisiana.",
+            "reference": "Zwei weitere EF0 Tornados landeten in Arkansas und Louisiana.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Allen first appeared as the superhero Impulse, a teenage sidekick of the superhero the Flash, before he became the second hero known as Kid Flash.",
+            "reference": "Allen erschien zuerst als Superheld Impulse, ein Teenager-Anh\u00e4nger des Superhelden Flash, bevor er der zweite Held wurde, der als Kid Flash bekannt ist.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Stimulates maturation of the follicle, which then in turn secretes estrogen.",
+            "reference": "Stimuliert die Reifung des Follikels, das wiederum \u00d6strogen absondert.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Israeli jets used napalm bombs during their sorties.",
+            "reference": "Israelische Jets nutzten Napalmbomben w\u00e4hrend ihrer Leiden.",
+            "prediction": "assum'''to''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "They streamlined the Superman mythos, by downsizing his abilities and reducing his normal powerful prowess.",
+            "reference": "Sie rationalisierten den Superman-Mythos, indem sie seine F\u00e4higkeiten herabstuften und seine normalen m\u00e4chtigen F\u00e4higkeiten reduzierten.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Frustrated at the dismissal of former President Nathan B.",
+            "reference": "Frustriert \u00fcber die Entlassung des ehemaligen Pr\u00e4sidenten Nathan B.",
+            "prediction": "''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Most of his inscriptions began with invocations to Shiva.",
+            "reference": "Die meisten seiner Inschriften begannen mit Anrufen an Shiva.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "It campaigned Ford Fusions with Hermie Sadler driving.",
+            "reference": "Es Kampagnen Ford Fusions mit Hermie Sadler fahren.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "The storyline ended with Carla managing to untie herself and escaping but Tony perishing in the blaze.",
+            "reference": "Die Handlung endete mit Carla gelingt es, sich zu l\u00f6sen und zu entkommen, aber Tony in der Flamme zugrunde gehen.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Duarte Pacheco and his troops went back on their longboats.",
+            "reference": "Duarte Pacheco und seine Truppen fuhren auf ihren Langbooten zur\u00fcck.",
+            "prediction": "Dup'properly'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "The University of Regina Cougars coach swimmers who compete in Canadian Interuniversity Sport.",
+            "reference": "Die University of Regina Cougars Trainer Schwimmer, die im kanadischen interuniversit\u00e4ren Sport konkurrieren.",
+            "prediction": "assum'''to''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "A Soldier's Best Friend; Scout Dogs and their Handlers in the Vietnam War.",
+            "reference": "Ein bester Freund eines Soldaten; Pfadfinderhunde und ihre Handler im Vietnamkrieg.",
+            "prediction": "BC'''to'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Gunther agrees and the Burgundians and their vassals arrive at Etzel's court.",
+            "reference": "Gunther stimmt zu und die Burgunder und ihre Vasallen kommen am Hof von Etzel an.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "On 11 June, the besiegers began the bombardment with their great guns, some of the shots from which weighed 17, 19, 24, and 31 lbs.",
+            "reference": "Am 11. Juni begannen die Belagerer die Bombardierung mit ihren gro\u00dfen Gesch\u00fctzen, von denen einige 17, 19, 24 und 31 lbs wogen.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "He immediately nominated Damien and Kyra for eviction.",
+            "reference": "Er ernannte Damien und Kyra sofort zur R\u00e4umung.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "General Gerd von Rundstedt, the commander of Army Group A, also disagreed with it.",
+            "reference": "Auch General Gerd von Rundstedt, Kommandeur der Heeresgruppe A, stimmte ihr nicht zu.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Han Fei gained new prominence with favourable citations.",
+            "reference": "Han Fei gewann neue Bekanntheit mit g\u00fcnstigen Zitaten.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "They first attacked Arsuf, which surrendered without resistance on 29 April, securing a safe passage for the townspeople to Ascalon.",
+            "reference": "Sie griffen zuerst Arsuf an, der sich am 29. April widerstandslos ergeben hatte, um den Stadtbewohnern einen sicheren Durchgang nach Ascalon zu sichern.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "They consist of a row of nephrons, each emptying directly into the mesonephric duct.",
+            "reference": "Sie bestehen aus einer Reihe von Nephonen, die sich jeweils direkt in den mesonephrischen Kanal entleeren.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "The arc formed by the subduction of the Gorda and Juan de Fuca plates at the Cascadia subduction zone.",
+            "reference": "Der Bogen durch die Subduktion der Gorda und Juan de Fuca Platten in der Cascadia Subduktionszone gebildet.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Between 30 March and 24 April, she cruised in the central Baltic and in the waters around R\u00fcgen.",
+            "reference": "Vom 30. M\u00e4rz bis 24. April fuhr sie in der zentralen Ostsee und in den Gew\u00e4ssern um R\u00fcgen.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Dumplings symbolize wealth because their shape resembles a Chinese sycee.",
+            "reference": "Kn\u00f6del symbolisieren Reichtum, weil ihre Form einem chinesischen Sycee \u00e4hnelt.",
+            "prediction": "log'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Together with Goldar, he defects from Lord Zedd to join Ivan Ooze, when Ivan imprisons Lord Zedd and Rita Repulsa in a snowglobe.",
+            "reference": "Zusammen mit Goldar mangelt es ihm an Lord Zedd, sich Ivan Ooze anzuschlie\u00dfen, als Ivan Lord Zedd und Rita Repulsa in eine Schneekugel einsperrt.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Wolves may encounter striped hyenas in Israel, Central Asia and India, usually in disputes over carcasses.",
+            "reference": "W\u00f6lfe k\u00f6nnen gestreiften Hy\u00e4nen in Israel, Zentralasien und Indien begegnen, in der Regel in Streitigkeiten um Schlachtk\u00f6rper.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "In some cases, the aphids secrete the honeydew in response to ants tapping them with their antennae.",
+            "reference": "In einigen F\u00e4llen sezernieren die Blattl\u00e4use den Honigtau als Reaktion auf Ameisen, die sie mit ihren Antennen abklopfen.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Lynchings against individual blacks averaged about one a week across the south.",
+            "reference": "Lynchings gegen einzelne Schwarze im Durchschnitt etwa eine Woche \u00fcber den S\u00fcden.",
+            "prediction": "tte'''to'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Rivers and lakes are populated with pike, walleye, whitefish, rainbow, speckled, brown trout, and sturgeon.",
+            "reference": "Fl\u00fcsse und Seen sind mit Hecht, Walleye, Wei\u00dffischen, Regenbogen, gesprenkelten, Bachforellen und St\u00f6r besiedelt.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "In the past clarinetists used to wrap a string around the mouthpiece and reed instead of using a ligature.",
+            "reference": "Fr\u00fcher wickelten Klarinettisten eine Schnur um das Mundst\u00fcck und das Rohr, anstatt eine Ligatur zu verwenden.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "1990 John Meurig Thomas, New microcrystalline catalysts.",
+            "reference": "1990 John Meurig Thomas, Neue mikrokristalline Katalysatoren.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "He also brought the Ancients and Moderns quarrel into English with his Reflections on Ancient and Modern Learning.",
+            "reference": "Mit seinen Reflections on Ancient and Modern Learning brachte er auch den Streit der \u00c4ltesten und Modernen ins Englische.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "On 19 July, the Privy Council proclaimed Mary queen to the acclamation of the crowds in London.",
+            "reference": "Am 19. Juli proklamierte das Privy Council Mary Queen zur Akklamation der Menschenmenge in London.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Josh Schwartz characterized the later Luke as \"strumming a guitar being a goofball.\"",
+            "reference": "Josh Schwartz bezeichnete den sp\u00e4teren Lukas als \"Gitarre schrumpfen als Goofball\".",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "The familiar invertebrate groups including bryozoans, cephalopods, corals, gastropods, and pelecypods were all present.",
+            "reference": "Die bekannten wirbellosen Gruppen, darunter Bryozoane, Kopff\u00fc\u00dfer, Korallen, Astropoden und Pelecypoden, waren alle anwesend.",
+            "prediction": "Dup'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Powell resigned from the Union Army on January 5, 1865.",
+            "reference": "Powell trat am 5. Januar 1865 aus der Gewerkschaftsarmee zur\u00fcck.",
+            "prediction": "assum'''to'''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "About , the notarized testament in Monein de Ramon de Forcade, Priest.",
+            "reference": "\u00dcber das notariell beglaubigte Testament in Monein de Ramon de Forcade, Priester.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Aleksandr Ezhevsky, 101, Soviet engineer and statesman.",
+            "reference": "Alexander Eschewski, 101, sowjetischer Ingenieur und Staatsmann.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "A British historical drama starring Marlene Dietrich and Robert Donat, with Dietrich as an imperiled aristocrat on the eve of the Russian Revolution.",
+            "reference": "Ein britisches historisches Drama mit Marlene Dietrich und Robert Donat, mit Dietrich als gef\u00e4hrdeter Aristokrat am Vorabend der russischen Revolution.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Notable dishes in the state include Sarawak laksa, kolo mee, and ayam pansuh.",
+            "reference": "Zu den bemerkenswerten Gerichten im Staat geh\u00f6ren Sarawak laksa, kolo mee und ayam pansuh.",
+            "prediction": "tteilog''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Hotel Monte Ne and Missouri Row both featured porches 575 ft long.",
+            "reference": "Hotel Monte Ne und Missouri Row beide mit Veranda 575 ft lang.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "177 Gene Rowe Tennessee Luney Honeymoon / Memory From The Past 1954",
+            "reference": "177 Gene Rowe Tennessee Luney Honeymoon / Erinnerung aus der Vergangenheit 1954",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "The Indians fired back at the sailors with musket balls loaded in cannon on the shore.",
+            "reference": "Die Indianer feuerten zur\u00fcck auf die Matrosen mit Muskettb\u00e4llen, die in Kanonen am Ufer geladen waren.",
+            "prediction": "tte'''to''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Juliette comes back to Nashville and reconnects with Avery and Cadence.",
+            "reference": "Juliette kommt zur\u00fcck nach Nashville und verbindet sich wieder mit Avery und Cadence.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "resuscitation practices, tracheal intubation, and the administering of medication.",
+            "reference": "Wiederbelebungspraktiken, tracheale Intubation und die Verabreichung von Medikamenten.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "In 2014, after storms and heavy rain, a landslip caused the road between Ventnor and Niton to collapse.",
+            "reference": "Nach St\u00fcrmen und starkem Regen brach 2014 die Landrutsche zwischen Ventnor und Niton zusammen.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "When Patrizia wakes up from her coma, she fools Leonard that Mila is his and tries to get Leonard back.",
+            "reference": "Als Patrizia aus ihrem Koma aufwacht, t\u00e4uscht sie Leonard, Mila sei sein und versucht, Leonard zur\u00fcckzuholen.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Castell Y Bere's starving garrison would eventually surrender on 25 April.",
+            "reference": "Castell Y Beres hungernde Garnison w\u00fcrde sich schlie\u00dflich am 25. April ergeben.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "He boasted to Texian Army commander Sam Houston that the Texians could \"whip 10 to 1 with our artillery\".",
+            "reference": "Er prahlte dem Texian Army Kommandanten Sam Houston, dass die Texianer \"10 zu 1 mit unserer Artillerie peitschen\" k\u00f6nnten.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Rumours abounded that Bokassa himself occasionally participated in beatings and executions.",
+            "reference": "Ger\u00fcchten zufolge beteiligte sich Bokassa selbst gelegentlich an Schl\u00e4gen und Hinrichtungen.",
+            "prediction": "assum'''to''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Colonel Sweet reinstated Colonel Strong as commander of the garrison.",
+            "reference": "Colonel Sweet setzte Colonel Strong wieder als Kommandant der Garnison ein.",
+            "prediction": "OLDoc'''to''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "On 19 June, the regiment experienced its first fatality when Trooper Vincent Thompson died of meningitis.",
+            "reference": "Am 19. Juni erlebte das Regiment sein erstes Todesopfer, als Trooper Vincent Thompson an Meningitis starb.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Others were scalped, dismembered, and cannibalized.",
+            "reference": "Andere wurden skalpiert, zerst\u00fcckelt und kannibalisiert.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Several hundred rioters ransacked the Singapore embassy in Jakarta and the homes of Singaporean diplomats.",
+            "reference": "Mehrere hundert Randalierer durchw\u00fchlten die Botschaft Singapurs in Jakarta und die H\u00e4user singapurischer Diplomaten.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "XXI Bomber Command followed up the firebombing of Tokyo with similar raids against other major cities.",
+            "reference": "XXI Bomber Command folgte der Bombardierung Tokios mit \u00e4hnlichen Angriffen auf andere Gro\u00dfst\u00e4dte.",
+            "prediction": "x'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "It appears we\u2019re stuck, happily, with this furry goodwill ambassador.",
+            "reference": "Es sieht so aus, als ob wir mit diesem pelzigen Botschafter des guten Willens zufrieden waren.",
+            "prediction": "''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "The Squadron attacked towards Baghdad fighting both the Republican Guard and the Sadam Fedayeen.",
+            "reference": "Das Geschwader griff Bagdad an und k\u00e4mpfte sowohl gegen die Republikanische Garde als auch gegen die Sadam Fedayeen.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "It sufficed, however, to demonstrate his credentials as a medievalist in the eyes of his contemporaries.",
+            "reference": "Es gen\u00fcgte jedoch, in den Augen seiner Zeitgenossen seine Anerkennung als Medivalist zu demonstrieren.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Furthermore, norepinephrine transporter knockout in mice models increases their tolerance to stress, implicating norepinephrine in depression.",
+            "reference": "Dar\u00fcber hinaus erh\u00f6ht Norepinephrin Transporter Knockout in M\u00e4usemodellen ihre Toleranz gegen\u00fcber Stress, was Norepinephrin in Depressionen.",
+            "prediction": "''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "His soldiers celebrated his victories with grand parades around the Carrousel.",
+            "reference": "Seine Soldaten feierten seine Siege mit gro\u00dfen Paraden rund um den Karussell.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "A single barge carries the equivalent of 15 railcars and on the Lower Mississippi some tows handle up to 40 plus barges.",
+            "reference": "Ein einziger Lastkahn tr\u00e4gt das \u00c4quivalent von 15 Triebwagen und auf dem Unteren Mississippi halten einige Schlepper bis zu 40 plus Lastk\u00e4hne.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "In April, former Pakistan Test cricketer Mohsin Kamal replaced Chappell as coach.",
+            "reference": "Im April ersetzte der ehemalige Pakistan Test Cricketer Mohsin Kamal Chappell als Trainer.",
+            "prediction": "assum'''to'''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "In household cult, the paterfamilias functioned as priest, and members of his familia as acolytes and assistants.",
+            "reference": "Im h\u00e4uslichen Kult fungierten die Paterfamilien als Priester und Mitglieder seiner Familie als Assistenten.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Later, he joins the Thunderbolts in their efforts to assassinate Moon Knight.",
+            "reference": "Sp\u00e4ter schlie\u00dft er sich den Thunderbolts in ihren Bem\u00fchungen an, Mondritter zu ermorden.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "That afternoon, he backtracked 60 mi westward to Lake City.",
+            "reference": "An diesem Nachmittag zog er 60 Meilen westw\u00e4rts nach Lake City zur\u00fcck.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Soon Kandy revolted and the Portuguese army retreated to Mannar.",
+            "reference": "Bald rebellierte Kandy und die portugiesische Armee zog sich nach Mannar zur\u00fcck.",
+            "prediction": "tte'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Thompson called Stuckey \"a rich playboy\" who \"socializes with the Kennedy crowd in Washington\".",
+            "reference": "Thompson nannte Stuckey \"einen reichen Playboy\", der \"mit dem Kennedy-Publikum in Washington sozialisiert\".",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "On November 24, 2000, P\u00e9rez teamed with Steve Corino to defeat Laureano and Yoshihiro Tajiri.",
+            "reference": "Am 24. November 2000 schlug P\u00e9rez gemeinsam mit Steve Corino Laureano und Yoshihiro Tajiri.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "In the Bahamas, the anemometer at Ragged Island blew away after registering a 150 mi/h wind gust.",
+            "reference": "Auf den Bahamas wehte das Anemometer auf Ragged Island nach der Registrierung einer 150 mi / h Windb\u00f6e weg.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "This provoked a backlash from the Montagnards, some joining the NLF as a result.",
+            "reference": "Dies provozierte eine Gegenreaktion von den Montagnards, von denen einige der NLF beitraten.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Hinde claimed that M'Intosh recounted that American Indians and Welshmen living on the Mississippi River were conversing in Welsh in the late 1700s.",
+            "reference": "Hinde behauptete, M 'Intosh erz\u00e4hle, dass amerikanische Indianer und Welshmen, die auf dem Mississippi leben, in den sp\u00e4ten 1700er Jahren in Walisisch sprachen.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "On 10 January 1967, Wallace L. Lind departed the Destroyer and Submarine Pier, Norfolk, and commenced a Mediterranean tour.",
+            "reference": "Am 10. Januar 1967 verlie\u00df Wallace L. Lind den Destroyer and Submarine Pier, Norfolk, und begann eine Mittelmeertour.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Paralleling the coast, Newton steadily intensified.",
+            "reference": "Parallel zur K\u00fcste intensivierte sich Newton stetig.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "He served patrolling the coast of West Africa guarding against slavers.",
+            "reference": "Er diente dazu, die K\u00fcste Westafrikas vor Sklaven zu besch\u00fctzen.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "However, she withdrew from the tournament before it began, citing a collarbone injury.",
+            "reference": "Jedoch zog sie sich aus dem Turnier zur\u00fcck, bevor es begann, unter Berufung auf eine Kollarknochenverletzung.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Schurz, now considered a Liberal Republican ringleader, advocated full amnesty for former Confederates.",
+            "reference": "Schurz, der heute als liberaler republikanischer Anf\u00fchrer gilt, bef\u00fcrwortete eine vollst\u00e4ndige Amnestie f\u00fcr ehemalige Konf\u00f6derierte.",
+            "prediction": "tte'''to'''''''' ''''''''''''' '"
+        },
+        {
+            "input": "Powhatan Henry Clarke, K Troop, 10th Cavalry Regiment during the pursuit of Geronimo in May 1886.",
+            "reference": "Posowan Henry Clarke, K Truppe, 10. Kavallerie Regiment w\u00e4hrend der Verfolgung von Geronimo im Mai 1886.",
+            "prediction": "assum'''to'''' '''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "The coureurs des bois and the soldiers borrowed canoes and moccasins.",
+            "reference": "Die Coureurs des bois und die Soldaten borgten sich Kanus und Mokassins.",
+            "prediction": "log'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "For example, assembl\u00e9, pas de bourr\u00e9e, and glissade can be designated as under or dessous.",
+            "reference": "Zum Beispiel Assembl\u00e9, Pas de Bourr\u00e9e und Glissade k\u00f6nnen als unter oder dessous bezeichnet werden.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "DNA replication Prokaryotic DNA replication Processivity",
+            "reference": "DNA-Replikation Prokaryotische DNA-Replikation Prozess",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "He greets the executioner and asks him where he his from.",
+            "reference": "Er gr\u00fc\u00dft den Henker und fragt ihn, woher er kommt.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Fore River also constructed the battleship , and the cruisers and as well as the Navy's first carrier and its successor .",
+            "reference": "Fore River baute auch das Schlachtschiff und die Kreuzer sowie den ersten Tr\u00e4ger der Marine und seinen Nachfolger.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Captain Robert Cunliffe relieved Talbott on 22 August.",
+            "reference": "Captain Robert Cunliffe entlastet Talbott am 22. August.",
+            "prediction": "Captarchive''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Today, some Kibbutzim operate major industrial ventures.",
+            "reference": "Heute betreiben einige Kibbutzim gro\u00dfe Industrieunternehmen.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "She arrives in the Land of Ev, where a trio of Wheelers rudely wakes her up and accuses her of being a witch.",
+            "reference": "Sie kommt im Land Ev an, wo ein Trio von Wheelers sie r\u00fccksichtslos weckt und beschuldigt, eine Hexe zu sein.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "In June 2011, the Afghan National Army returned the loaned C7 rifles as the ANA preferred the American M16 rifle.",
+            "reference": "Im Juni 2011 gab die afghanische Nationalarmee die ausgeliehenen C7-Gewehre zur\u00fcck, da die ANA das amerikanische M16-Gewehr bevorzugte.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "After successfully escorting the convoys, Wichita returned to Hvalfj\u00f6r\u00f0ur, arriving on 6 May.",
+            "reference": "Nach erfolgreicher Begleitung der Konvois kehrte Wichita am 6. Mai nach Hvalfj\u00f6r\u00f0ur zur\u00fcck.",
+            "prediction": "fter 'archive'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Council of Association of Polish Writers convenes in Warsaw, electing J\u00f3zef Szczepa\u0144ski as president, December 29.",
+            "reference": "Der Rat der Assoziation polnischer Schriftsteller tritt am 29. Dezember in Warschau zusammen und w\u00e4hlt J\u00f3zef Szczepa\u0144ski zum Pr\u00e4sidenten.",
+            "prediction": "assum'''to'''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "\"Interpreting Serials\", in his The Limits of Interpretation, pp.",
+            "reference": "Interpreting Serials, in seinem The Limits of Interpretation, pp.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "He would often refer to these jaunts as his \"cruising\".",
+            "reference": "Er w\u00fcrde diese Schn\u00e4ppchen oft als seine \"Kreuzfahrt\" bezeichnen.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "During the absolution, the Libera me, Domine is sung while the priest incenses the coffin and sprinkles it with holy water.",
+            "reference": "W\u00e4hrend der Absolution, der Libera me, wird Domine gesungen, w\u00e4hrend der Priester den Sarg r\u00e4uchert und mit heiligem Wasser bestreut.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "They won the 2010 NRL Grand Final against the Sydney Roosters.",
+            "reference": "Sie gewannen das NRL Grand Final 2010 gegen die Sydney Roosters.",
+            "prediction": "tte'''to''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "On 18 August 1780, whilst at the Post House in Pyritz, Corry wrote a very brief codicil, later referred to as the second or Pyritz Codicil.",
+            "reference": "Am 18. August 1780 schrieb Corry in der Post in Pyritz einen sehr kurzen Code, der sp\u00e4ter als zweiter oder Pyritz Codicil bezeichnet wurde.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "In 2012 Kiplinger's Personal Finance ranked Kalamazoo fourth of the Ten Best Cities for Cheapskates.",
+            "reference": "Im Jahr 2012 belegte Kiplingers Personal Finance Kalamazoo den vierten Platz unter den zehn besten St\u00e4dten f\u00fcr Cheapskates.",
+            "prediction": "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''"
+        },
+        {
+            "input": "Instead of revering the divine, Renaissance artists honoured themselves, arrogantly celebrating human sensuousness.",
+            "reference": "Anstatt das G\u00f6ttliche zu verehren, ehrten sich Renaissancek\u00fcnstler und feierten arrogant menschliche Sinnlichkeit.",
+            "prediction": "instead'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '"
+        },
+        {
+            "input": "Communal shelters never housed more than one seventh of Greater London residents.",
+            "reference": "In kommunalen Schutzh\u00e4usern waren nie mehr als ein Siebtel der Bewohner des Gro\u00dfraums London untergebracht.",
+            "prediction": "assum'''to''''''''''''''''''''''''''''''''''''''''''''''"
+        }
+    ]
+}
