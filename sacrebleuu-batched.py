@@ -12,7 +12,7 @@ def write_pretty_json(file_path, data):
     print(f"wrote {file_path}")
 
 
-parser = argparse.ArgumentParser(description='Process some integers.')
+parser = argparse.ArgumentParser(description='')
 parser.add_argument('num_shots', type=int)
 parser.add_argument('model', type=str)
 
