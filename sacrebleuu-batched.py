@@ -82,17 +82,16 @@ sacrebleu = evaluate.load("sacrebleu")
 for i, out in enumerate(tqdm(pipeline(prompts_generator, batch_size=56, **gen_config),total=len(prompts))):
 	prediction=out[0]["generated_text"][len(prompts[i])+1:].split("\n")[0]
 
-	# ! change for new language
 	reference=ds_predict["translation"][i]["de"]	
 	original=ds_predict["translation"][i]["en"]		
 
 	results["translations"].append({"input": original, "reference":reference, "prediction": prediction})
 	results["num_translations"]+=1
 
-	sacrebleu_results=sacrebleu.compute(predictions=[t["prediction"] for t in results["translations"]], references=[t["reference"] for t in results["translations"]])
-	results["sacrebleu_score"]=sacrebleu_results["score"]
+sacrebleu_results=sacrebleu.compute(predictions=[t["prediction"] for t in results["translations"]], references=[t["reference"] for t in results["translations"]])
+results["sacrebleu_score"]=sacrebleu_results["score"]
 
-	print(results["sacrebleu_score"])
-	write_pretty_json("sacrebleu-" + model_path.split("/")[-1] + f"_{num_shots}-shot" + ".json",results)
+print(results["sacrebleu_score"])
+write_pretty_json("sacrebleu-" + model_path.split("/")[-1] + f"_{num_shots}-shot" + ".json",results)
 
 
