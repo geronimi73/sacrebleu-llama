@@ -11,23 +11,13 @@ def write_pretty_json(file_path, data):
         json.dump(data, write_file, indent=4)
     print(f"wrote {file_path}")
 
-
-parser = argparse.ArgumentParser(description='')
-parser.add_argument('num_shots', type=int)
-parser.add_argument('model', type=str)
-
-args = parser.parse_args()
-
-num_shots=args.num_shots
-model_path=args.model
-
-# model_path="models/llama2-7b"
+model_path="models/llama2-7b"
 data_set={
 	"path": "wmt20_mlqe_task1",
 	"name": "en-de",
 	"split": "test",
 }
-# num_shots=0
+num_shots=5
 
 pipeline = transformers.pipeline(
 		"text-generation",
