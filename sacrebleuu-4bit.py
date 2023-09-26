@@ -1,5 +1,4 @@
-from transformers import AutoModelForCausalLM, BitsAndBytesConfig, AutoTokenizer
-
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig 
 import transformers, evaluate, torch
 from datasets import load_dataset
 from tqdm import tqdm
@@ -78,6 +77,6 @@ for i, prompt in enumerate(tqdm(prompts)):
     results["num_translations"]+=1
     results["sacrebleu_score"]=sacrebleu_results["score"]
 
-    print(sacrebleu_results["score"])
-    write_pretty_json("sacrebleu-" + model_path.split("/")[-1] + f"_{5}-shot" + ".json",results)
+print(sacrebleu_results["score"])
+write_pretty_json("sacrebleu-" + model_path.split("/")[-1] + f"_{5}-shot" + ".json",results)
 
