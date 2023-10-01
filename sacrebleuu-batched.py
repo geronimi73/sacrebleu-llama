@@ -4,7 +4,6 @@ import torch
 import json
 from tqdm import tqdm
 from datasets import load_dataset
-from transformers import StoppingCriteria, StoppingCriteriaList
 import argparse
 
 def write_pretty_json(file_path, data):
@@ -12,18 +11,7 @@ def write_pretty_json(file_path, data):
         json.dump(data, write_file, indent=4)
     print(f"wrote {file_path}")
 
-class StoppingCriteriaSub(StoppingCriteria):
-    def __init__(self, stops = [], encounters=1):
-        super().__init__()
-        self.stops = [stop.to("cuda") for stop in stops]
-
-    def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor):
-        for stop in self.stops:
-            if torch.all((stop == input_ids[0][-1:])).item():
-                return True
-        return False
-
-model_path="models/ALMA-13B"
+model_path="models/llama2-7b"
 data_set={
 	"path": "wmt20_mlqe_task1",
 	"name": "en-de",
@@ -45,7 +33,7 @@ pipeline.model.config.pad_token_id = pipeline.tokenizer.pad_token_id
 
 ds = load_dataset(**data_set)
 
-prompt_template="\nEnglish: {en}\nGerman: {de}"
+prompt_template="English: {en}\nGerman: {de}"
 
 if num_shots==0:
 	prompt_examples=""
@@ -58,10 +46,6 @@ ds_predict=ds[num_shots:]
 prompts=[ (prompt_examples+"\n\n"+prompt_template).format(en=d["en"],de="")[:-1] for d in ds_predict["translation"] ] 
 prompts_generator=(p for p in prompts)	# pipeline needs a generator, not a list
 
-
-stop_words_ids = [pipeline.tokenizer("\n\n", return_tensors='pt',add_special_tokens=False)['input_ids'][0][-1]]			# tokenizer issue, llama tokenizer always prepends 29871 to \n, therefore generate \n\n and use last one
-stopping_criteria = StoppingCriteriaList([StoppingCriteriaSub(stops=stop_words_ids)])
-
 gen_config = {
     "temperature": 0.7,
     "top_p": 0.1,
@@ -70,14 +54,13 @@ gen_config = {
 	"do_sample": True,
 	"num_return_sequences": 1,
 	"eos_token_id": pipeline.tokenizer.eos_token_id,
-	"max_new_tokens": 500,		
-    "stopping_criteria": stopping_criteria,		# stop on "\n"
+	"max_new_tokens": 100,		
 }
 
 results={
 	"model": model_path,
 	"dataset": data_set["path"] + "_" + data_set["name"],
-	"gen_config": {k: gen_config[k] for k in set(list(gen_config.keys())) - set(["stopping_criteria"])},	# exclude stopping criteria, not json serializable
+	"gen_config": gen_config,
 	"num_shots": num_shots,
 	"num_translations": 0,
 	"sacrebleu_score": None,
@@ -87,7 +70,8 @@ results={
 sacrebleu = evaluate.load("sacrebleu")
 
 for i, out in enumerate(tqdm(pipeline(prompts_generator, batch_size=24, **gen_config),total=len(prompts))):
-	prediction=out[0]["generated_text"][len(prompts[i]):].split("\n")[0].strip()
+	prediction=out[0]["generated_text"][len(prompts[i])+1:]
+	prediction=prediction.split("\n")[0].strip() if "\n" in prediction else prediction.strip()
 
 	reference=ds_predict["translation"][i]["de"]	
 	original=ds_predict["translation"][i]["en"]		
